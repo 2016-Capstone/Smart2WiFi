@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.0_38210c69a654fdac70b6f5b13ac6ea59f4db0bf3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.0_95daad0471b14de656197b05bf82695d82a5e0e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.0_680cab3312e7852a1ed02b8632598a0cb2976640.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.0_8971c4d67863d5297e35c6e5b209e7c5ec63ad90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f8941b96f4d7a7c8d1b8c1d4eecd7d3967b8e16b">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_cc9d23142712d2247ebb1ce3ee9d783d63227e84.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CookAndroid\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.0_5b07977ea3f012c8fa5547a6622d6c5e7789bf8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_142ff7aad990fb0d97b6e54d90f7e07ad3296827.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.0_ad94ee4a537f6dca0e56cb04f1469f1177fb50ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.0_523cd77b3c93c2d81d6b1096bc0f3959a7790da2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_7f015c716e39f27ad29fb98956ff933c242316cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_39d836d58dea4e0a1bb1fe7e124877c88f218c29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="db5a12a969cee1276bcea89ecf7567fbedd00e0a">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\instant-run_794c914898741873f1e680e37f7ef14a8fa34758.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.0_95ffaced478329d190131a6a23a9a7c010833b8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.0_9b84554bb3c98c51eed7117d35eb56208c5ce341.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_446f43a7933382e9e65cb729deb1bf117e5cdaf5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.0_c16e1235bad48b58e89320749ce1f2151278c6ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.0_b0119a27b2eeb0edd59fcf7fe5b39e8e17aab45f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_6d8a85c35673740224cbd60d3b74d7fd7f8f1ecd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\nsc1303-PJH\Downloads\AQI_ver1-master\Smart2WiFi\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.0_2b4b12b7ef088a10badf1458723be8c4c4179d08.jar" />
+    </item>
+
+</items>

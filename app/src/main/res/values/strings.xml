@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Smart2WiFi</string>
+    <string name="snack_bar_wifi_on">현재 WiFi가 꺼져있습니다.\n먼저 WiFi를 켜시겠습니까?</string>
+    <string name="snack_bar_scan">연결 가능한 WiFi를 검색하는 중입니다.</string>
+    <string name="snack_bar_stop">연결 가능한 WiFi 검색을 중단하였습니다.</string>
+</resources>
