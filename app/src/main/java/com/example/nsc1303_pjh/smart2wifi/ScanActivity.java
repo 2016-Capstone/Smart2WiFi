@@ -5,12 +5,11 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.graphics.Color;
+import android.net.DhcpInfo;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +18,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.example.nsc1303_pjh.smart2wifi.Const.wifiManager;
 
 /**
  * Created by nsc1303-PJH on 2016-09-27.
@@ -33,7 +33,6 @@ public class ScanActivity extends AppCompatActivity{
     final private int MY_PERMISSIONS_REQUEST_READ_CONTACTS=1;
     final private String TAG="ScanActivity";
 
-    WifiManager wifiManager;
     WifiReceiver wifiReceiver;
     List<ScanResult> wifiList;
     ListView listView;
@@ -59,6 +58,7 @@ public class ScanActivity extends AppCompatActivity{
     AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
             WifiConfiguration wifiConfiguration = new WifiConfiguration();
 
             wifiConfiguration.SSID = "\"".concat((String)parent.getAdapter().getItem(position)).concat("\"");
@@ -71,16 +71,25 @@ public class ScanActivity extends AppCompatActivity{
             wifiConfiguration.allowedAuthAlgorithms.clear();
             wifiConfiguration.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.CCMP);
 
+            wifiConfiguration.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.WEP40);
+            wifiConfiguration.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.WEP104);
+            wifiConfiguration.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.CCMP);
+            wifiConfiguration.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
+
             int networkId = wifiManager.addNetwork(wifiConfiguration);
 
             if (networkId != -1) {
                 wifiManager.enableNetwork(networkId, true);
-            }
+                DhcpInfo dhcpInfo = wifiManager.getDhcpInfo() ;
+                int serverIP = dhcpInfo.gateway;
 
-            Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), wifiManager.getConnectionInfo().getSSID()+"와 연결하였습니다.", Snackbar.LENGTH_LONG);
-            TextView textView = (TextView) snackbar.getView().findViewById(android.support.design.R.id.snackbar_text);
-            textView.setTextColor(Color.WHITE);
-            snackbar.show();
+                Const.SERVER_IP = String.format("%d.%d.%d.%d", (serverIP & 0xff),(serverIP >> 8 & 0xff),(serverIP >> 16 & 0xff),(serverIP >> 24 & 0xff));
+            }
+//            Intent intentSocket = new Intent(getApplicationContext(), SocketActivity.class);
+//            startActivity(intentSocket);
+
+            Intent intentFlight = new Intent(getApplicationContext(), FlightActivity.class);
+            startActivity(intentFlight);
             Log.d(TAG,"onItemClick()");
         }
     };
@@ -99,14 +108,12 @@ public class ScanActivity extends AppCompatActivity{
 
     protected void onResume(){
         super.onResume();
-        // Register wifi receiver to get the results
         registerReceiver(wifiReceiver, new IntentFilter(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
         Log.d(TAG,"onResume()");
     }
 
     protected void onPause(){
         super.onPause();
-        // Unregister the wifi receiver
         unregisterReceiver(wifiReceiver);
         Log.d(TAG,"onPause()");
     }
@@ -116,7 +123,9 @@ public class ScanActivity extends AppCompatActivity{
             wifiResults.clear();
             wifiList = wifiManager.getScanResults();
             for(int i = 0; i < wifiList.size(); i++){
-                wifiResults.add(wifiList.get(i).SSID.toString());
+                if(wifiList.get(i).SSID.toString().equals("MyRP3")){
+                    wifiResults.add(wifiList.get(i).SSID.toString());
+                }
             }
             adapter.notifyDataSetChanged();
             Log.d(TAG,"onReceive() - BroadcastReceiver");
@@ -125,7 +134,7 @@ public class ScanActivity extends AppCompatActivity{
 
     public void onButtonStopClick(View v){
         wifiManager.setWifiEnabled(false); //와이파이 설정 자체를 OFF
-//        onPause();// broadcast 명령을 해제
+//        onPause();                        // broadcast 명령을 해제
         Log.d(TAG,"onButtonStopClick()");
     }
 }

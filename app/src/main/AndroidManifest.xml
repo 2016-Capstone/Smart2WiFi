@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -23,6 +23,15 @@
 
         <activity
             android:name=".ScanActivity">
+        </activity>
+
+        <activity
+            android:name=".SocketActivity">
+        </activity>
+        
+        <activity
+            android:name=".FlightActivity"
+            android:screenOrientation="landscape">
         </activity>
 
     </application>
