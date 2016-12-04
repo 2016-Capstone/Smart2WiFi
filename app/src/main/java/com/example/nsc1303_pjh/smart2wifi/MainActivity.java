@@ -1,5 +1,6 @@
 package com.example.nsc1303_pjh.smart2wifi;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,11 +12,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button buttonScan;
     boolean wifiEnabled=false;
     WifiManager wifiManager;
+
+    public static ArrayList<Activity> actList = new ArrayList<Activity>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         buttonScan=(Button)findViewById(R.id.buttonScan);
         wifiManager=(WifiManager) this.getSystemService(Context.WIFI_SERVICE);
+
+
     }
 
     public void onButtonScanClick(View v){
@@ -42,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             snackbar.show();
         }else{
             Intent intentScan = new Intent(this,ScanActivity.class);
+            intentScan.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentScan);
         }
     }

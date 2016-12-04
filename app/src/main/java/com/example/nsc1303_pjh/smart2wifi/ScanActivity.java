@@ -89,6 +89,7 @@ public class ScanActivity extends AppCompatActivity{
 //            startActivity(intentSocket);
 
             Intent intentFlight = new Intent(getApplicationContext(), FlightActivity.class);
+            intentFlight.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentFlight);
             Log.d(TAG,"onItemClick()");
         }

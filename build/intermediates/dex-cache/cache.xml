@@ -3,92 +3,11 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_dfecb9251d1a0773faef749e133fc6d91ec58f5f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="625db20c5274db7283b83796cda6c0a4671c6157">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_aeb30f0e9dd43b6b7dd7fbf280b0fd9d5f716164\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_952b07cd6fee6256497e3f1e9bfb4bf91b8efb29\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_d72758c7f87c3831ebb5816c0479856124a3ceca\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_1fac2738d98551024d29af95ce9c0c2caaf696af\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_e8fc05a74a16a9acc3a6c18795284bc97a9378eb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_2ee50711af194116f5637e1888c49d82ca6a7c8f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_01ee6fad4fd518229ba275bf04684555645421f7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\CookAndroid\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
-        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_5b07977ea3f012c8fa5547a6622d6c5e7789bf8a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="15d4dcd699dd41c29d4fa0271375066da3121b83">
+        sha1="fb4d225f892e1a66f386c1d07530b46975d89264">
         <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b2ba07ba8dab3be3d5bee8ef0d1679fbc0dbb4e6\classes.dex" />
     </item>
     <item
@@ -129,6 +48,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_dfecb9251d1a0773faef749e133fc6d91ec58f5f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="a1eb3f3485918fca1543988a4a396033cfa76818">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_aeb30f0e9dd43b6b7dd7fbf280b0fd9d5f716164\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_952b07cd6fee6256497e3f1e9bfb4bf91b8efb29\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
         jumboMode="true"
         optimize="true"
@@ -138,12 +84,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_d72758c7f87c3831ebb5816c0479856124a3ceca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_1fac2738d98551024d29af95ce9c0c2caaf696af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
         <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.0_27e42847b20a958aae5fe7a8bb20064b00f6f8e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_e8fc05a74a16a9acc3a6c18795284bc97a9378eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_2ee50711af194116f5637e1888c49d82ca6a7c8f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -162,6 +144,24 @@
         revision="24.0.0"
         sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
         <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_247ca2a01b7ff41c12b43617dbbadc0ff03dcbb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_01ee6fad4fd518229ba275bf04684555645421f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\CookAndroid\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\nsc1303-PJH\Documents\GitHub\Smart2WiFi\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_5b07977ea3f012c8fa5547a6622d6c5e7789bf8a\classes.dex" />
     </item>
     <item
         is-multidex="true"

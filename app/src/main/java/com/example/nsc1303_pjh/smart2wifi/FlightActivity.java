@@ -1,11 +1,15 @@
 package com.example.nsc1303_pjh.smart2wifi;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -43,6 +47,8 @@ public class FlightActivity extends AppCompatActivity {
     private PrintWriter printWriter;
     private BufferedReader bufferedReader;
 
+    boolean ConnectionTrue;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,9 +68,54 @@ public class FlightActivity extends AppCompatActivity {
         buttonLeft=(Button)findViewById(R.id.buttonLeft);
         buttonLandTakeOff.setText("Take Off");
 
+        ConnectionTrue=false;
         ChatOperator chatOperator = new ChatOperator();
         chatOperator.execute();
+
     }
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+         if((keyCode == KeyEvent.KEYCODE_BACK)) {
+             AlertDialog.Builder d = new AlertDialog.Builder(this);
+             d.setTitle(getString(R.string.dialog_title));
+             d.setMessage(getString(R.string.dialog_contents));
+             d.setIcon(R.mipmap.ic_launcher);
+
+             d.setPositiveButton(getString(R.string.dialog_yes),new DialogInterface.OnClickListener() {
+                 @Override
+                 public void onClick(DialogInterface dialog, int which) {
+                     String text;
+
+                     if(ConnectionTrue){
+
+                         ChatOperator chatOperator = new ChatOperator();
+
+                         text="32";//항상 랜딩시키고 113 날리도록 만들자 무섭다
+                         chatOperator.MessageSend(text);
+
+                         text="113";
+                         chatOperator.MessageSend(text);
+
+                     }
+                     finish();
+                 }
+             });
+
+             d.setNegativeButton(getString(R.string.dialog_no),new DialogInterface.OnClickListener() {
+                 @Override
+                 public void onClick(DialogInterface dialog, int which) {
+                     dialog.cancel();
+                 }
+             });
+             d.show();
+
+             return true;
+         }
+         return super.onKeyDown(keyCode, event);
+     }
 
     private class ChatOperator extends AsyncTask<Void,Void,Void>{
         @Override
@@ -94,7 +145,7 @@ public class FlightActivity extends AppCompatActivity {
             return null;
         }
 
-        private void MessageSend(String text){
+        private void MessageSend(final String text){
             final Sender messageSender=new Sender();
             if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.HONEYCOMB){
                 messageSender.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,text);
@@ -105,20 +156,28 @@ public class FlightActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Void aVoid) {
+
             buttonEmergency.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    String text="EM";
-                    MessageSend(text);
+                    if(ConnectionTrue){
+                        String text="101";
+                        MessageSend(text);
+                    }
                 }
             });
 
             buttonLandTakeOff.setOnClickListener(new View.OnClickListener(){
+
                 public void onClick(View v){
-                    String text=null;
+                    String text="";
+
                     if(buttonLandTakeOff.getText()=="Take Off"){
+                        ConnectionTrue=true;
                         text="116";
                         buttonLandTakeOff.setText("Landing");
+
                     }else{
+                        ConnectionTrue=false;
                         text="32";
                         buttonLandTakeOff.setText("Take Off");
                     }
@@ -126,59 +185,147 @@ public class FlightActivity extends AppCompatActivity {
                 }
             });
 
-            buttonForward.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonForward.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="114";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
-            buttonBack.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonBack.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="102";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
-            buttonRollLeft.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonRollLeft.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="100";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
-            buttonRollRight.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonRollRight.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="103";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
-            buttonUp.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonUp.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="65";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
-            buttonDown.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonDown.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="66";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
-            buttonRight.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonRight.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="67";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
-            buttonLeft.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+            buttonLeft.setOnTouchListener(new View.OnTouchListener(){
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
                     String text="68";
-                    MessageSend(text);
+                    switch(event.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            if(ConnectionTrue){
+                                MessageSend(text);
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            DroneDefault();
+                            break;
+                    }
+                    return true;
                 }
             });
 
@@ -186,6 +333,11 @@ public class FlightActivity extends AppCompatActivity {
                 Receiver receiver = new Receiver();
                 receiver.execute();
             }
+        }
+
+        private void DroneDefault(){
+            String text="-1";
+            MessageSend(text);
         }
     }
 
